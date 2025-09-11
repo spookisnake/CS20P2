@@ -22,7 +22,7 @@ public class RectanglePerimeter
 		System.out.print("Enter a length: ");
 		length = input.nextInt(); 
 		
-		
+		// Show the inputs
 		System.out.println("Your width is:" + width);
 		System.out.println("Your length is:" + length);
 		
