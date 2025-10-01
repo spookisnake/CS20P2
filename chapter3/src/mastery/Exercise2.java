@@ -25,7 +25,7 @@ public class Exercise2
         double totalCost = LABOR_COST + RENT_COST + materialCost;
 
         // Display result
-        System.out.println("The cost of making a " + diameter + " inch pizza is " + totalCost);
+        System.out.println("The cost of making a " + diameter + " inch pizza is $" + totalCost);
 
 		input.close();
 		
