@@ -14,7 +14,7 @@ public class GradeAvgPt2
 		int sum = 0;
 		double average;
 		
-		//shortened the input part
+		//shortened the input part and made it into a for loop
 		for (int i = 1; i <= 5; i++) 
 		{
 			System.out.print("Enter your grade " + i + ": ");
