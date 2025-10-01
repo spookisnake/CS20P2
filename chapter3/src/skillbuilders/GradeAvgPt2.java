@@ -9,7 +9,7 @@ public class GradeAvgPt2
 	{
 		Scanner input = new Scanner(System.in);
 		
-		//declare variables
+		//declare variables, added a new variable
 		int grade;
 		int sum = 0;
 		double average;
