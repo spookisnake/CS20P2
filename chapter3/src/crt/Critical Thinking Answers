@@ -1,0 +1,137 @@
+
+1. Identifiers-----------
+
+a) Four legal identifier names (they can contain letters, digits, underscores, and $, but cannot start with a digit, and cannot be reserved words):
+
+myVariable
+
+student_name
+
+num1
+
+total$Amount
+
+b) Four illegal identifier names:
+
+2fast → Illegal because identifiers cannot start with a digit.
+
+class → Illegal because it’s a reserved keyword in Java.
+
+my variable → Illegal because spaces are not allowed in identifiers.
+
+price@item → Illegal because @ is not allowed (only _ and $ are allowed special characters).
+
+
+2. Variable Declarations-----------
+
+a) Two statements:
+
+int numBeads;
+numBeads = 5;
+
+
+b) One statement: 
+
+int numBeads = 5;
+
+
+3. Variable Values-----------
+
+a)
+
+int myNumber = 5;
+int yourNumber = 4;
+myNumber = yourNumber * 2;   // myNumber = 4 * 2 = 8
+yourNumber = myNumber + 5;   // yourNumber = 8 + 5 = 13
+Final value of yourNumber = 13
+
+b)
+
+int myNumber;
+int yourNumber = 4;
+myNumber = yourNumber + 7;   // myNumber = 4 + 7 = 11
+yourNumber = myNumber;       // yourNumber = 11
+Final value of yourNumber = 11
+
+
+4. Data Types-----------
+
+a) The number of basketballs in a store → int (whole number count).
+b) The price of a basketball → double (decimal values needed for money).
+c) The number of players on a basketball team → int (whole number).
+d) The average age of players → double (averages often have decimals).
+e) Whether a player has received a jersey → boolean (true or false).
+f) The first initial of a player’s first name → char (single character).
+
+
+5. Differences-----------
+
+a)
+
+Primitive data type: Basic built-in types in Java (like int, double, char, boolean). They store simple values directly.
+
+Abstract (reference) data type: More complex, defined by classes (like String, Scanner, ArrayList). They store references to objects, not the values themselves.
+
+b)
+
+Class: A blueprint/template that defines the structure and behavior of objects (like a recipe).
+
+Object: An instance of a class (like the actual cake made from the recipe).
+
+
+11. -----------
+
+a) y = j * k;
+
+j * k is 5 * 1.6 = 8.0 (a double).
+
+But y is an int, so you need type casting.
+
+y = (int)(j * k);   // y = 8
+
+
+Rounds down automatically when casting to int (truncates decimal).
+
+b) z = j * k;
+
+j * k is 8.0 (double).
+
+z is already a double, so no casting needed.
+
+z = j * k;   // z = 8.0
+
+
+Explanation: Both operands promote correctly (j is promoted to double automatically).
+
+Part d–j (True/False type knowledge check)
+
+d) "Values typed by the user cannot be used in an application."
+
+False → User input can be captured using Scanner or other methods.
+
+e) "The Scanner class is part of a Java package."
+
+True → It belongs to java.util.
+
+f) "The + operator has higher precedence than the – operator."
+
+False → In Java, + and - have the same precedence (and are evaluated left to right).
+
+g) "The – operator has lower precedence than the % operator."
+
+True → % (modulus) has higher precedence than + or -.
+
+h) "byte is a keyword."
+
+True → It’s a primitive type keyword.
+
+i) "The identifiers apple and Apple are considered the same in Java."
+
+False → Java is case-sensitive, so they are different identifiers.
+
+j) "Errors that violate the rules of Java are called semantic errors."
+
+False → They’re called syntax errors.
+
+Semantic errors = code runs, but the logic/meaning is wrong (e.g., adding when you meant subtract).
+
