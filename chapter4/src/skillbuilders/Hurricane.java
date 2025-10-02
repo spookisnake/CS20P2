@@ -12,7 +12,7 @@ public class Hurricane
 		System.out.print("Enter the hurricane category (1-5): ");
 		int category = input.nextInt();
 		
-		 // Display wind speed info based on category
+		 // Display wind speed info based on category.
 		if (category == 1) 
 		{
             System.out.println("Category 1: 74-95 mph, 64-82 kt, 119-153 km/hr");
