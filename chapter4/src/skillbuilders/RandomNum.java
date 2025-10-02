@@ -27,7 +27,7 @@ public class RandomNum
 			return;
 		}
 		
-		// Generate the random number.
+		// Generate the random number
 		int randomNumber = rand.nextInt((max - min)+ 1) + min;
 		
 		// Display result
