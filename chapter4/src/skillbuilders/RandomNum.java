@@ -28,7 +28,7 @@ public class RandomNum
 		}
 		
 		// Generate the random number
-		int randomNumber = rand.nextInt((max - min)+ 1) + min;
+		int randomNumber = rand.nextInt((max - min) + 1) + min;
 		
 		// Display result
         System.out.println("Random number between " + min + " and " + max + " is: " + randomNumber);
