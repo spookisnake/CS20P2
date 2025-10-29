@@ -55,7 +55,7 @@ public class Delivery
 			System.out.println("Accepted height!");
 		}
 		
-		System.out.println("Accepted package!");
+		System.out.println("Accepted the package!");
 		
 		input.close();
 	}
