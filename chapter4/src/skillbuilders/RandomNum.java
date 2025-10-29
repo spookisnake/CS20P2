@@ -13,7 +13,7 @@ public class RandomNum
 		Random rand = new Random();
 		
 		//ask user for Numbers
-		System.out.print("Enter the minimun value: ");
+		System.out.print("Enter the minimum value: ");
 		int min = input.nextInt();
 		
 		System.out.print("Enter the maximum value: ");
@@ -22,7 +22,7 @@ public class RandomNum
 		//if the minimum number is greater than the maximum the display an error
 		if (min > max) 
 		{	
-			System.out.println("Error: Minimun value cannot be greater than the maximum value");
+			System.out.println("Error: Minimum value cannot be greater than the maximum value");
 			input.close();
 			return;
 		}
