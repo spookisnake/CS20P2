@@ -8,6 +8,7 @@ public class Exercise1
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);
+		
 		//Ask the user how many copies they're going to print
 		System.out.print("Enter the number of copies to be printed: ");
 		int copies = input.nextInt();

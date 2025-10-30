@@ -40,9 +40,11 @@ public class Delivery
 		{
 			System.out.println("Accepted width!");
 		}
+		
 		// Ask for the Height of the box
 		System.out.print("Enter the Height of the package: ");
 		int height = input.nextInt();
+		
 		// Check if the Height is within accepted range
 		if (height > 10) 
 		{
