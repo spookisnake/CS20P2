@@ -10,6 +10,11 @@ public class OddSum
 		
 		Scanner input = new Scanner(System.in);
 		
+		System.out.print("Enter a Number: ");
+		input.nextInt();
+		
+		
+		
 		input.close();
 	}
 
