@@ -7,6 +7,13 @@ public class Student
 	private String address;
 	private int stuId;
 	
-	
+	public Student() //Constructor Method
+	{
+		firstName = "";
+		lastName = "";
+		address = "####";
+		stuId = 00000;
+		
+	}
 	
 }
