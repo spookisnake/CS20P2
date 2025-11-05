@@ -20,7 +20,7 @@ public class RandomNum
 		int max = input.nextInt();
 		
 		//if the minimum number is greater than the maximum the display an error
-		if (min > max) 
+		if (min > max)
 		{	
 			System.out.println("Error: Minimum value cannot be greater than the maximum value");
 			input.close();
