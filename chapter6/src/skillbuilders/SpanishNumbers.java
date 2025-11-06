@@ -2,7 +2,6 @@ package skillbuilders;
 
 public class SpanishNumbers 
 {
-    // Method that takes an int and prints its Spanish translation
     public static void displayNumberInSpanish(int number) 
     {
         String spanishWord;
@@ -22,7 +21,7 @@ public class SpanishNumbers
             default: spanishWord = "Number out of range"; break;
         }
 
-        System.out.println(number + " → " + spanishWord);
+        System.out.println(number + " -> " + spanishWord);
     }
 
     // Main method
