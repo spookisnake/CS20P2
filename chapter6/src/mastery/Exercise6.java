@@ -13,8 +13,17 @@ public class Exercise6
 		System.out.println("Enter a positive integer: ");
 		int num = input.nextInt();
 		
-		//Sum all digits together 
 		
+		//Sum all digits together 
+		int sum = 0;
+        int temp = num;
+        
+        while (temp > 0) {
+            sum += temp % 10;
+            temp /= 10;
+        }
+        
+        System.out.println("The sum of the digits is: " + sum);
 		
 		input.close();
 	}
