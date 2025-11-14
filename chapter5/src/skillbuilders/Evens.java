@@ -3,9 +3,9 @@ package skillbuilders;
 public class Evens 
 {
 	 public static void displayEvenNumbers(int number) 
-	    {
+	 {
 	        String evenNumbers;
-
+	        
 	        switch (number) 
 	        {
 	            case 1: evenNumbers = "2"; break;
@@ -18,11 +18,11 @@ public class Evens
 	            case 8: evenNumbers = "16"; break;
 	            case 9: evenNumbers = "18"; break;
 	            case 10: evenNumbers = "20"; break;
-	            default: evenNumbers = "Number out of range"; break;
+	            default: evenNumbers = "Numbers out of range"; break;
 	        }
 	        
 	        System.out.println("" + evenNumbers);
-	    }
+	  }
 	
 	public static void main(String[] args) 
 	{
