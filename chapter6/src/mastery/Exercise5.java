@@ -9,7 +9,7 @@ public class Exercise5
 	{
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Enter your amount of coins");
+		System.out.println("Enter your amount of coins:");
 		
 		
 		
