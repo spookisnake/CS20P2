@@ -86,7 +86,7 @@ public class TimeConverter
 		}
 		else 
 		{
-			System.out.print("Invalid number, please enter a number between 1 and 4 ");
+			System.out.print("Invalid number, please enter a number between 1 and 4.");
 		}
 		
 		input.close(); 
