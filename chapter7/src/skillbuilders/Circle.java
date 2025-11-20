@@ -39,7 +39,6 @@ public class Circle
 		return circ;
 	}
 	
-	//stuff that might get removed later
 	public static void displayAreaFormula() 
 	{
 		System.out.println("The formula for the area of "
