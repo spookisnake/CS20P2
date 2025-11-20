@@ -10,6 +10,11 @@ public class Circle
 		radius = 1;
 	}
 	
+	public Circle(double r) //Overload constructor Method 
+	{
+		radius = r;		
+	}
+	
 	public double getRadius() 
 	{
 		return radius;
@@ -20,7 +25,7 @@ public class Circle
 		radius = r;
 	}
 	
-	public double Area() 
+	public double area() 
 	{
 		double circArea = PI * radius * radius;
 		
@@ -32,6 +37,13 @@ public class Circle
 		double circ = 2 * PI * radius;
 		
 		return circ;
+	}
+	
+	//stuff that might get removed later
+	public static void displayAreaFormula() 
+	{
+		System.out.println("The formula for the area of "
+				+ "a circle is a=Pi*r*r");
 	}
 	
 	public String toString() 
