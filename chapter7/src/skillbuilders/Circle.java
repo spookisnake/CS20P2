@@ -41,8 +41,8 @@ public class Circle
 	
 	public static void displayAreaFormula() 
 	{
-		System.out.println("The formula for the area of "
-				+ "a circle is a=Pi*r*r");
+		System.out.println("The formula to calculate the area of"
+				+ " a circle is A = PI * r * r");
 	}
 	
 	public String toString() 
