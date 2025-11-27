@@ -47,4 +47,10 @@ public class Rectangle
 		return 2 * (length + width);
 	}
 	
+	public static void displayAreaFormula() 
+	{
+		System.out.println("The formula to calculate the area of"
+				+ " a Rectangle is A =  length * width");
+	}
+	
 }

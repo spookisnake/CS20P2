@@ -7,6 +7,8 @@ public class TestRectangle
 	{
 		Rectangle r1 = new Rectangle();
 		
+		Rectangle.displayAreaFormula();
+		
 		System.out.println("Rectangle Area: " + r1.getArea());
 		System.out.println("Rectangle Perimeter: " + r1.getPerimeter());
 		
