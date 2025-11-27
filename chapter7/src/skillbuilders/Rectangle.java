@@ -53,4 +53,17 @@ public class Rectangle
 				+ " a Rectangle is A =  length * width");
 	}
 	
+	public boolean equals(Object obj) {
+        Rectangle other = (Rectangle) obj;
+        return length == other.length && width == other.width;
+	}
+	
+	public String toString() 
+	{
+        return "Rectangle [length= " + length 
+        		+ ", width=" + width
+               + ", area= " + getArea() 
+               + ", perimeter= " + getPerimeter() + "]";
+	}
+	
 }

@@ -16,6 +16,9 @@ public class TestRectangle
 		
 		System.out.println("Rectangle 2 Area: " + r2.getArea());
 		System.out.println("Rectangle 2 Perimeter: " + r2.getPerimeter());
+		
+		System.out.println(r1.toString());
+		System.out.println(r2.toString());
 	}
 
 }
