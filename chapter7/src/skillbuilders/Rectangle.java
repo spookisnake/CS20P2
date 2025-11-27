@@ -17,16 +17,6 @@ public class Rectangle
 		width = w; 
 	}
 	
-	public void setLength(double l) 
-	{
-		length = l;
-	}
-	
-	public void setWidth(double w) 
-	{
-		width = w;
-	}
-	
 	public double getLength() 
 	{
 		return length;
@@ -35,6 +25,16 @@ public class Rectangle
 	public double getWidth() 
 	{
 		return width;
+	}
+	
+	public void setLength(double l) 
+	{
+		length = l;
+	}
+	
+	public void setWidth(double w) 
+	{
+		width = w;
 	}
 	
 	public double getArea() 
