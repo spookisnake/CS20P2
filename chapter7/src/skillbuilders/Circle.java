@@ -45,6 +45,18 @@ public class Circle
 				+ " a circle is A = PI * r * r");
 	}
 	
+	public boolean equals(Object c) {
+	    if (this == c) {
+	        return true;
+	    }
+	    if (c == null || getClass() != c.getClass()) {
+	        return false;
+	    }
+
+	    Circle other = (Circle) c;
+	    return this.radius == other.radius;
+	}
+	
 	public String toString() 
 	{
 		return ("The radius is: " + radius);
