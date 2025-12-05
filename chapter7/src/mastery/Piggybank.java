@@ -15,25 +15,24 @@ public class Piggybank
 		quarters = 0;
 	}
 	
-	public void addPennies(int amount) 
+	public void addPenny() 
 	{
-		pennies += amount;
-	}
+        pennies++;
+    }
+
+    public void addNickel() 
+    {
+        nickels++;
+    }
+
+    public void addDime() 
+    {
+        dimes++;
+    }
+
+    public void addQuarter() 
+    {
+        quarters++;
+    }
 	
-	public void addNickels(int amount) 
-	{
-		nickels += amount;
-	}
-	
-	public void addDimes(int amount) 
-	{
-		dimes += amount;
-	}
-	
-	public void addQuarters(int amount) 
-	{
-		quarters += amount;
-	}
-	
-	//comment
 }
