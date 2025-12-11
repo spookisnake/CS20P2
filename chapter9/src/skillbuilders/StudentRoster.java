@@ -24,7 +24,7 @@ public class StudentRoster
 		}
 		
 		System.out.println(" ");
-		System.out.println("Student Roster");
+		System.out.println("Student Roster: ");
 		
 		for (int i = 0; i < students.length; i++) {
             System.out.println(students[i]);
