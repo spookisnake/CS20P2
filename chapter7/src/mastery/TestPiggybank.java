@@ -64,6 +64,7 @@ public class TestPiggybank
 
         } while (choice != 0);
 		
+		input.close();
 	}
 
 }
