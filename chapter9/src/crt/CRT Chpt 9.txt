@@ -34,5 +34,5 @@
 	It uses the "equals()" method to compare objects.
 
 12. How can the values of wrapper class objects be compared?
-	By using "equals()" method and not ==
+	By using "equals()" method and not ==.
 
