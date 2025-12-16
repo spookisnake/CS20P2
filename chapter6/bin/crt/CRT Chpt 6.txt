@@ -1,0 +1,124 @@
+2. Explain the difference between method declaration and method body.
+	The method declaration acts as a blueprint, describing what the method is and how to interact with it, while the method body provides the concrete implementation of the method's behavior.
+3. What type of keyword is used to change the access level of a method?
+	"public" "private" "default" "protected"
+4. What is another word used for describing the access level of a method?
+	Visibility
+5. Explain the scope of each of the variables in the code below:
+ 	
+ public class ScopeExample {
+ 	public static void main(String[] args) {
+ 		int var1;
+ 		for (int var2 = 0; var2 < 5; var2++) {
+ 		method1();
+ 		}
+ 	}
+ 	public static void method1() {
+ 		int var3;
+ 		for (int var4 = 0; var4 < 2; var4++) {
+ 		var3 += 1;
+ 		}
+ 	}
+ }
+
+var1: This variable is declared within the main method's code block. 
+Its scope is limited to the main method. It can be accessed anywhere from its declaration point to the end of the main method.
+
+var2: This variable is declared within the initialization part of the for loop in the main method. 
+Its scope is limited to that for loop's header and body. It cannot be accessed outside of that specific loop.
+
+var3: This variable is declared within the method1's code block. 
+Its scope is limited to method1. It can be accessed anywhere from its declaration point to the end of the method1 body.
+
+var4: This variable is declared within the initialization part of the for loop in method1. 
+Its scope is limited to that specific for loop's header and body. It cannot be accessed outside of that loop.
+
+6. Write a method declaration for each of the following descriptions:
+	
+ a) A class method named getVowels that can be called by any other method, requires a String parameter, and returns an integer value.
+	public static int getVowels(String inputString) {
+    		// Method body would go here
+	}
+ b) A class method named extractDigit that can be called by any other method, requires an integer parameter, and returns an integer value.
+	public static int extractDigit(int inputInt) {
+    		// Method body would go here
+	}
+
+ c) A class method named insertString that can be called by any other method, requires a String parameter and an integer parameter, and returns a String parameter.
+	public static String insertString(String originalString, int position) {
+    		// Method body would go here
+	}
+	
+7. 
+ a) How does the compiler distinguish one method from another?
+	it distinguishes a method from another for its "method signature"
+	
+ b) Can two methods in the same class have the same name? Explain.
+	Yes, two methods in the same class can have the same name. But, For this to be valid, the methods must have different "method signatures".
+
+8. 
+ a) What is the return statement used for?
+	it serves 2 different purposes: Terminating method execution, and returning a value.
+ b) How many values can a return statement send back to the calling statement?
+	It can only send 1 value back.
+ c) How is the declaration of a method returning a value different from the declaration of a method that does not return a value?
+	The primary difference in the declaration of a method that returns a value versus one that does not lies in the return type specified in the method header.
+
+9. Find and explain the error in the code below:
+
+public class MethodCallExample {
+ 	public static void main(String[] args) {
+ 		int num;
+ 		doSomething();
+ 		num = doSomething();
+ 	}
+
+	public static int doSomething() {
+ 		return(5);
+ 	}
+ }
+
+//The error in the code is found in the line "doSomething();" within the "main" method.
+//The method returns the integer 5, but the calling main method simply ignores this value without storing it or using it in any expression.
+//To fix the error, the line with "doSomething();" should be removed 
+
+True/False
+11. Determine if each of the following are true or false. If false, explain why.
+
+ a) Breaking a task down into methods is called procedural abstraction.
+	True.
+
+ b) A method call consists of the method declaration in an assignment statement.
+	False. A method call is an invocation of a method. The method declaration defines the method's signature and body, while the call executes it.
+
+ c) A void method must return a value.
+	False. A void method. It does not return a value.
+
+ d) An access modifier declares the return type of a method.
+	False.An access modifier determines the visibility of a method to other parts of the program.
+
+ e) The keyword static declares a method is a class method.
+	True. 
+
+ f) Method parameters are enclosed by braces ({}).
+	False. Method parameters are enclosed by parenthesis (). Braces {} are used to define the body of a method. 
+
+ g) Local variables can be used by any method in a class.
+	False. Local variables are declared within a specific method or block and their scope is limited to that block. They cannot be used by other methods in the class.
+
+ h) The value of an argument passed to a method can be changed in an assignment statement in the method.
+	True.
+
+ i) Method overloading means that an application contains more than 10 methods.
+	False. Method overloading means that two or more methods in the same class share the same name but have different parameter lists.
+
+ j) The return statement is used to send a value back to the calling statement.
+	True.
+
+ k) The precondition of a method states the data types of the method’s parameters.
+	False.  A precondition of a method describes the conditions that must be true before the method is called for it to work correctly.
+
+ l) The postcondition of a method describes the way the method accomplishes its task.
+	False. The postcondition of a method describes what will be true after the method has finished executing.
+
+

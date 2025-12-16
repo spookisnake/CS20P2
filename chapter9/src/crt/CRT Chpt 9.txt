@@ -1,0 +1,38 @@
+1. What index value does the third element of an array have?
+	Index 2, because Java arrays are zero-based (0, 1, 2).
+
+2. Write the declaration for an array named quantities that stores 20 integers.
+	int[] quantities = new int[20];
+
+3. Write a declaration for an array named heights storing the numbers 1.65, 2.15, and 4.95.
+	double[] heights = {1.65, 2.15, 4.95};
+
+4. Write a for-each statement that displays the integer values stored in an array named grades.
+	for (int grade : grades)
+	{
+    	    System.out.println(grade);
+	}
+
+6. How does passing an entire array to a method differ from passing a single element of the array?
+	Passing an entire array gives the method access to all elements, and changes made inside the method affect the original array. 
+	Passing a single element only passes one value, so changes do not affect the array.
+
+7. Why are offset array indexes required in some cases.
+	Offset indexes are needed when array positions do not directly match real-world values (e.g. Ages 1–10 in indexes 0–9). 
+	Offsets align data values with correct indexes.
+
+8. What output is displayed by the statements below?
+ String name = "Elaine";
+ System.out.println(name.charAt(3))
+	Output will be "i".
+
+10. Give an example of when a dynamic array might be a better structure choice over an array.
+	When the number of items changes frequently, such as storing a list of players joining and leaving a game, 
+	an ArrayList is better than a fixed-size array.
+
+11. How does the ArrayList indexOf() method determine equality between the object passed to the method and an element in the array?
+	It uses the "equals()" method to compare objects.
+
+12. How can the values of wrapper class objects be compared?
+	By using "equals()" method and not ==
+
