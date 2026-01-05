@@ -14,7 +14,7 @@ public class HumSensor {
       humiditySensor.open(1000);
       temperatureSensor.open(1000);
 
-      //Use your Phidgets | This code will print humidity and temperature read by the sensor every 150ms.
+      //Use your Phidgets | This code will print humidity and temperature read by the sensor every 150ms
       while(true) {
           System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH, Temperature: " + temperatureSensor.getTemperature() + " °C" );
           Thread.sleep(150);
