@@ -5,7 +5,8 @@ import com.phidget22.TemperatureSensor;
 
 public class HotOrCold {
 
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception
+	{
 
 	      TemperatureSensor temperatureSensor = new TemperatureSensor();
 	      DigitalOutput redLED = new DigitalOutput();
