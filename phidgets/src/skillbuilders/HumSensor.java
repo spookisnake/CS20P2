@@ -16,8 +16,30 @@ public class HumSensor {
 
       //Use your Phidgets | This code will print humidity and temperature read by the sensor every 150ms
       while(true) {
-          System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH, Temperature: " + temperatureSensor.getTemperature() + " °C" );
+    	  double humidity = humiditySensor.getHumidity();
+          double temperature = temperatureSensor.getTemperature();
+
+          if (humidity > 30) 
+          {
+              System.out.println("Humidity: " + humidity + " %RH");
+          } else 
+          {
+              System.out.println("Humidity is low");
+          }
+          
+          if(temperature > 21) 
+          {
+        	  System.out.println("Temperature: " + temperature + " °C");
+          } else 
+          {
+        	  System.out.println("Room is too Cold");
+          }
+          
+          //System.out.println("Temperature: " + temperature + " °C");
           Thread.sleep(150);
+    	  
+          /*System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH, Temperature: " + temperatureSensor.getTemperature() + " °C" );
+          Thread.sleep(150);*/
       }
   }
 }

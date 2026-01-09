@@ -29,7 +29,7 @@ public class TugOfWar
 	    boolean lastGreenState = false;
 	    
 	    int position = 0;     
-        int WIN_LIMIT = 5;
+        int WIN_LIMIT = 10;
         
         System.out.println("Start!");
         
@@ -56,67 +56,67 @@ public class TugOfWar
 
             // Win conditions
             if (position >= WIN_LIMIT) {
-                System.out.println("RED TEAM WINS!");
+                System.out.println("RED WINS!");
                 redLED.setState(true);
                 Thread.sleep(1000);
                 redLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 
                 redLED.setState(true);
                 Thread.sleep(1000);
                 redLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 
                 redLED.setState(true);
                 Thread.sleep(1000);
                 redLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 
                 redLED.setState(true);
                 Thread.sleep(1000);
                 redLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 
                 redLED.setState(true);
                 Thread.sleep(1000);
                 redLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 break;
             }
 
             if (position <= -WIN_LIMIT) {
-                System.out.println("GREEN TEAM WINS!");
+                System.out.println("GREEN WINS!");
                 greenLED.setState(true);
                 Thread.sleep(1000);
                 greenLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 
                 greenLED.setState(true);
                 Thread.sleep(1000);
                 greenLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 
                 greenLED.setState(true);
                 Thread.sleep(1000);
                 greenLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 
                 greenLED.setState(true);
                 Thread.sleep(1000);
                 greenLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 
                 greenLED.setState(true);
                 Thread.sleep(1000);
                 greenLED.setState(false);
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 break;
             }
 
             lastRedState = redState;
             lastGreenState = greenState;
 
-            Thread.sleep(150);
+            Thread.sleep(0);
         
         }
 	}

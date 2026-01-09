@@ -30,20 +30,38 @@ public class ButtonsAndLEDs {
       greenButton.open(1000);
       greenLED.open(1000);
       
+      //Use your Phidgets | This code will turn on the LED when the matching button is pressed and turns off the LED when the matching button is released. The sleep function slows down the loop so the button state is only checked every 150ms.
+
+     /* while(true){
+
+          if( redButton.getState()){
+              redLED.setState(false);
+          } else {
+              redLED.setState(true);
+          }
+
+          if(greenButton.getState()){
+              greenLED.setState(false);
+          } else {
+              greenLED.setState(true);
+          }
+
+          Thread.sleep(0);
+      }*/
+      
       boolean lastRedState = false;
       boolean lastGreenState = false;
       
       int totalPresses = 0;
       
-      //Use your Phidgets | This code will turn on the LED when the matching button is pressed and turns off the LED when the matching button is released. The sleep function slows down the loop so the button state is only checked every 150ms.
       while (true) {
 
           boolean currentRedState = redButton.getState();
           boolean currentGreenState = greenButton.getState();
 
           // LED logic
-          redLED.setState(currentGreenState);
-          greenLED.setState(currentRedState);
+          redLED.setState(currentRedState);
+          greenLED.setState(currentGreenState);
 
           // Count red button press
           if (currentRedState && !lastRedState) {
