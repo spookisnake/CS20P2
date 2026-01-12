@@ -10,7 +10,7 @@ public class TugOfWar
 	    DigitalOutput redLED = new DigitalOutput();
 	    DigitalInput greenButton = new DigitalInput();
 	    DigitalOutput greenLED = new DigitalOutput();
-		
+		 
 	    redButton.setHubPort(0);
 	    redButton.setIsHubPortDevice(true);
 	    redLED.setHubPort(1);
