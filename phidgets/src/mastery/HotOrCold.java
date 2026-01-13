@@ -1,4 +1,4 @@
-package skillbuilders;
+package mastery;
 
 import com.phidget22.DigitalOutput;
 import com.phidget22.TemperatureSensor;
