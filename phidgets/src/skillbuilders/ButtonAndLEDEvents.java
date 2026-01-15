@@ -3,7 +3,8 @@ package skillbuilders;
 //Add Phidgets Library
 import com.phidget22.*;
 
-public class ButtonAndLEDEvents {
+public class ButtonAndLEDEvents 
+{
 	
     static int redCount = 0;
     static int greenCount = 0;
@@ -13,7 +14,8 @@ public class ButtonAndLEDEvents {
     //static int totalPresses = 0;
     
     //Handle Exceptions
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception 
+    {
 
         //Create
         DigitalInput redButton = new DigitalInput();
@@ -32,13 +34,17 @@ public class ButtonAndLEDEvents {
         greenLED.setIsHubPortDevice(true);
 
         // Red Button Event
-        redButton.addStateChangeListener(new DigitalInputStateChangeListener() {
-            public void onStateChange(DigitalInputStateChangeEvent e) {
-                if (!gameOver && e.getState()) {
+        redButton.addStateChangeListener(new DigitalInputStateChangeListener() 
+        {
+            public void onStateChange(DigitalInputStateChangeEvent e) 
+            {
+                if (!gameOver && e.getState()) 
+                {
                     redCount++;
                     System.out.println("Red presses: " + redCount);
 
-                    if (redCount >= 10) {
+                    if (redCount >= 10) 
+                    {
                         gameOver = true;
                         System.out.println("RED PLAYER WINS!");
                         flashLED(redLED);
@@ -48,13 +54,17 @@ public class ButtonAndLEDEvents {
         });
 
         // Green Button Event
-        greenButton.addStateChangeListener(new DigitalInputStateChangeListener() {
-            public void onStateChange(DigitalInputStateChangeEvent e) {
-                if (!gameOver && e.getState()) {
+        greenButton.addStateChangeListener(new DigitalInputStateChangeListener() 
+        {
+            public void onStateChange(DigitalInputStateChangeEvent e) 
+            {
+                if (!gameOver && e.getState()) 
+                {
                     greenCount++;
                     System.out.println("Green presses: " + greenCount);
 
-                    if (greenCount >= 10) {
+                    if (greenCount >= 10) 
+                    {
                         gameOver = true;
                         System.out.println("GREEN PLAYER WINS!");
                         flashLED(greenLED);
@@ -76,15 +86,20 @@ public class ButtonAndLEDEvents {
     }
     
  // Flash winning LED 5 times
-    public static void flashLED(DigitalOutput led) {
-        try {
-            for (int i = 0; i < 5; i++) {
+    public static void flashLED(DigitalOutput led) 
+    {
+        try 
+        {
+            for (int i = 0; i < 5; i++) 
+            {
                 led.setState(true);
                 Thread.sleep(300);
                 led.setState(false);
                 Thread.sleep(300);
             }
-        } catch (Exception ex) {
+        } 
+        catch (Exception ex) 
+        {
             ex.printStackTrace();
         }
     }
